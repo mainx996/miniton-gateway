@@ -12,6 +12,7 @@ log:                # 日志配置
   maxBackups: 20    # 保留旧文件的最大个数
   maxAge: 14         # 保留旧文件的最大天数
   level: -1         # 日志级别 @see zap log level
+
 mysql:
   username: "***"
   password: "***"
