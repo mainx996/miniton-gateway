@@ -1,0 +1,19 @@
+http:
+  port: 8002
+  shutdownTimeout: 20
+
+env:
+  name: minton-gateway
+  mode: test       # 系统运行模式
+
+log:                # 日志配置
+  filename: ./log/test-minton-gateway.log
+  maxSize: 256      # 日志文件的最大大小(兆)
+  maxBackups: 20    # 保留旧文件的最大个数
+  maxAge: 14         # 保留旧文件的最大天数
+  level: -1         # 日志级别 @see zap log level
+mysql:
+  username: "***"
+  password: "***"
+  addr: "127.0.0.1:3306"
+  database: "miniton"
